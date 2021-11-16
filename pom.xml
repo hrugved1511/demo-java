@@ -17,14 +17,24 @@
         <version>3.7.0</version>
         <configuration>
           <archive>
-            <manifest> 
-              <mainClass>main.Hello</mainClass>
-            </manifest>
+           
           </archive>
           <source>1.8</source>
           <target>1.8</target>
         </configuration>
       </plugin>
+      <plugin><!-- Build an executable JAR -->
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-jar-plugin</artifactId>
+            <version>3.1.0</version>
+            <configuration>
+                <archive>
+                    <manifest>
+                        <mainClass>main.Hello</mainClass>
+                    </manifest>
+                </archive>
+            </configuration>
+        </plugin>
       <plugin>
         <artifactId>maven-war-plugin</artifactId>
         <version>3.0.0</version>
