@@ -16,6 +16,11 @@
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.7.0</version>
         <configuration>
+          <archive>
+            <manifest> 
+              <mainClass>main.Hello</mainClass>
+            </manifest>
+          </archive>
           <source>1.8</source>
           <target>1.8</target>
         </configuration>
